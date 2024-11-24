@@ -1,0 +1,350 @@
+/* 인덱스 작동 */
+
+*{margin:0; padding:0;}
+ul{list-style: none;}
+a{text-decoration: none; color:black;}
+
+.index:after{display:flex; content:''; clear:both;}
+.index {margin:0; position:relative; float: left; margin-right:5px;}
+
+.index{display:flex; padding:0 15px; height: 220px; line-height: 20px; color:black;}
+.index:hover
+.name-list {display:flex;}
+
+.index .name-list{display: none; position: absolute; top: 230px; left: 55px; right: 0; text-align: left;}
+.index .name-list a{display: flex; margin: 10px;}
+
+.index{
+    list-style-type: none;
+    position: fixed;
+    top: 2vh;
+    left:2vw;
+}
+
+.name-list{
+    position: flex;
+    font-family: "dongle";
+    font-size: 27px;
+}
+
+
+/* 중앙 아이덴티티 */
+
+.fixed-item {
+    position: fixed;
+    margin: 0px auto;
+    left: 40%;
+    transform: translateX(-20%);
+    top: 40%;
+    transform: translateY(-20%);
+    z-index: 2;
+}
+
+
+/* 텍스트 설정 */
+
+@font-face {
+    font-family: AppleSDGothicNeo;
+    font-weight: 200;
+    src: url(font/AppleSDGothicNeoUL.woff2) format("woff2");
+  }
+
+.title {
+    position: relative;
+    text-align: right;
+    font-family: "Dongle", serif;
+    font-size: 26px;
+    line-height: 0.9em;
+}
+
+
+#align-center {
+    text-align: center;
+}
+
+#align-left {
+    text-align: left;
+}
+
+/* shape poster 레이아웃 */
+
+.layout1 {
+    position: absolute;
+    left: calc(2vw + 230px);
+    top: 100px;
+    width: 32%;
+}
+
+.layout1 #img1 {
+    float: right;
+    margin-left: 10px;
+}
+
+.layout1 #img2 {
+    float: left;
+}
+
+#img2 {
+    position: absolute;
+    top: 150px;
+}
+
+.layout1 #img3 {
+    float: right;
+    margin-right: -150px;
+    margin-top: 450px;
+}
+
+
+.clear{
+    clear:both;
+}
+
+/* Patter Poster 레이아웃 */
+
+.layout2 {
+    position: absolute;
+    left: calc(2vw + 270px);
+    top: 1100px;
+    width: 32%;
+    height: max-content;
+}
+
+.layout2 #img4 {
+    float: left;
+    margin-left: 100px;
+}
+
+.layout2 #img5 {
+    float: right;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.layout2 #img6 {
+    float: right;
+    margin-top: 130px;
+    margin-right: -150px;
+}
+
+/* Generative System Design 레이아웃 */
+
+.layout3 {
+    position: absolute;
+    right: 2vw;
+    top: 100px;
+    width: 32%;
+}
+
+#img8 {
+    position: relative;
+    top: 10px;
+}
+
+.layout3 #img9 {
+    float: right;
+    margin-top: -180px;
+}
+
+.layout3 #img10 {
+    float: left;
+    margin-left: -60px;
+    margin-top: -200px;
+}
+
+.layout3 #img11 {
+    float: right;
+    margin-top: -110px;
+}
+
+/* Exhibition Design 레이아웃 */
+
+.layout4 {
+    position: absolute;
+    right: 2vw;
+    top: 1100px;
+    width: 32%;
+}
+
+.layout4 #img12 {
+    float: left;
+    margin-left: -140px;
+    margin-right: 10px;
+}
+
+.layout4 #img13 {
+    float:left;
+    margin-top: 30px;
+}
+
+.layout4 #img14 {
+    float: right;
+    margin-top: -40px;
+    margin-right: 40px;
+}
+
+.layout4 #img15 {
+    float: left;
+    margin-top: -160px;
+    margin-left: -100px;
+}
+
+.layout4 #img16 {
+    float: right;
+    margin-top: -180px;
+    margin-right: 70px;
+}
+
+/* Maximal Poster 레이아웃 */
+
+.layout5 {
+    position: absolute;
+    left: calc(2vw + 270px);
+    top: 2100px;
+    width: 20%;
+    height: max-content;
+}
+
+#content5 {
+    align-content: center;
+}
+
+.layout5 #img7 {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* Minimal 레이아웃 */
+
+.layout6 {
+    position: absolute;
+    right: 2vw;
+    top: 2200px;
+    width: max-content;
+}
+
+/* Collectbook 레이아웃 */
+
+.layout7 {
+    position: absolute;
+    right: 2vw;
+    top: 2350px;
+    width: max-content;
+}
+
+.layout7 #img18 {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.layout7 #img19 {
+    float: right;
+    margin-left: 10px;
+}
+
+/* Mapping 레이아웃 */
+
+.layout8 {
+    position: absolute;
+    right: 5vw;
+    top: 2800px;
+    width: max-content;
+}
+
+/* 갤러리 스타일 */
+.gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .gallery-item {
+    width: max-content;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.1);
+    animation-timing-function: ease;
+    animation-duration: 0.3s;
+  }
+  
+  /* 모달 배경 */
+  .modal {
+    display: none; /* 기본적으로 숨김 */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    padding-top: 60px;
+  }
+  
+  /* 모달 이미지 스타일 */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* 닫기 버튼 */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 이전/다음 버튼 */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 16px;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    z-index: 10;
+  }
+  
+  .prev {
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .next {
+    right: 0;
+    transform: translateY(-50%);
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  /* 캡션 텍스트 */
+  #caption {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+  }

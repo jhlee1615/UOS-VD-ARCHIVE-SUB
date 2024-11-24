@@ -1,0 +1,13 @@
+
+@font-face {
+  font-family: AppleSDGothicNeo;
+  font-weight: 200;
+  src: url(font/AppleSDGothicNeoUL.woff2) format("woff2");
+}
+
+.describtion {
+  position: relative;
+  text-align: right;
+  font-family: "AppleSDGothicNeo";
+  font-size: 14px;
+}
