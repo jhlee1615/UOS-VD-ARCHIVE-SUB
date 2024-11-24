@@ -358,10 +358,9 @@ a{text-decoration: none; color:black;}
   }
 
   /* 미디어쿼리 */
-@media (max-width: 768px) {
-    img {
+@media (orientation: portrait) {
+    body {
       width:30%;
       height: auto;
     }
   }
-
